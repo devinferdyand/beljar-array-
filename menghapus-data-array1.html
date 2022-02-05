@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mengisi data ke array</title>
+</head>
+<body>
+    <input type="number" id="tambahkan" >
+    <button onclick="submit()">proses</button>
+    <script>
+      function submit(){
+        // membuat array
+        var tambahkan = document.getElementById("tambahkan").value;
+
+        var products = ["Senter", "Radio", "Antena", "Obeng"];
+
+        // menghapus data pada array
+        delete products[ tambahkan];
+
+        
+        // menapilkan isi array
+        document.write(products);
+
+        if ( tambahkan >= 6 ){
+            alert("ga ada nomor")
+        }
+      }
+    </script>
+</body>
+</html>

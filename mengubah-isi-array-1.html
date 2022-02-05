@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nama">
+    <input type="number" id="no">
+    <button onclick="submit()">proses</button>
+    
+    <script>
+        function submit(){
+            var nama = document.getElementById("nama").value;
+            var no = document.getElementById("no").value;
+
+        var bahasa = ["Javascript", "Kotlin", "Java", "PHP", "Python"];
+       bahasa[no] = nama;
+
+       document.write(bahasa)
+        }
+    </script>
+</body>
+</html>
